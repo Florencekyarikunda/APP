@@ -1,0 +1,13 @@
+.App{
+  text-align: center;
+
+}
+
+.card{
+  position:relative; 
+  width: 70%;
+  height: 70%;
+  margin-bottom: 10%;
+  background:linear-gradient(45deg, #EB3349, 30%, #f45c43,90%);
+
+}

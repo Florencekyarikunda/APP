@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background:linear-gradient(45deg,#EB3349);
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./asset/blur-background.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+padding-top: 10%;
+text-align: center;
+padding-left: 20%;
+
+}
+
+.title{
+color: white;
+font-weight: 100;
+font-size: 200%;
+}
+.search-form{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form input{
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid rgb(46, 40, 40);
+  background: #242121;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.search-form button{
+  width: 8%;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px !important;
+  border: none;
+  cursor: pointer;
+  
+} 
+.search-form button:hover{
+  /* cursor: pointer; */
+  background: linear-gradient(45deg, #ffafbd,30%, #ffff);
+}
+.main-container{
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+
+}
+.main-container h4{
+  font-size: 25px;
+  font-weight: 800;
+
+}
+.main-container .weather-icon i{
+  font-size: 30px;
+  font-weight: 800;
+  animation: iconanimation 3s infinite;
+}
+@keyframes iconanimation {
+  from {
+    transform: scale(0.5,0.5);
+  }
+  to{
+    transform: scale(1,1);
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media only screen and (min-width:600px) {
+  .search-form input {
+    width: 70%;
+  }
+  .search-form button{
+    width: 25%;
+  }
+  
+}
+@media only screen and (max-width:600px) {
+  .search-form input {
+    width: 70%;
+  }
+  .search-form button{
+    width: 25%;
+  }
+  
+}
